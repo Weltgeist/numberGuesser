@@ -16,7 +16,7 @@ const generateTarget = () => Math.floor(Math.random()*10);
  * @param {Number} secretTarget a secret number used as reference 
  * @returns {Boolean} Results of compare.
  */
-const compareGuesses = (humanGuess,computerGuess,secretTarget) => Math.abs(humanGuess - secretTarget)<=Math.abs(computerGuess - secretTarget);
+const compareGuesses = (humanGuess,computerGuess,secretTarget) => getAbsoluteDistance(humanGuess,secretTarget)<=getAbsoluteDistance(computerGuess,secretTarget);
 /**
  * updates winner's score.
  * @param {String} winner a string of last round winner. 
