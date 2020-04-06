@@ -8,3 +8,13 @@ let currentRoundNumber = 1;
  * @return {Number} randomly chosen number
  */
 const generateTarget = () => Math.floor(Math.random()*10); 
+/**
+ * find the closest numbers to a secret number between a human guess and a computer guess.
+ * True=human Win, False=Computer Win. Human also win on a tie. 
+ * @param {Number} humanGuess a number chosen by human player
+ * @param {Number} computerGuess a number chosen by computer player
+ * @param {Number} secretTarget a secret number used as reference 
+ * @returns {Boolean} Results of compare.
+ */
+const compareGuesses = (humanGuess,computerGuess,secretTarget) => (humanGuess - secretTarget)<=(computerGuess - secretTarget);
+
