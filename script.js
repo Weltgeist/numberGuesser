@@ -39,3 +39,14 @@ const advanceRound = () => {currentRoundNumber++;};
  * @returns {Number} absolute distance
  */
 const getAbsoluteDistance = (num1,num2) => Math.abs(num1 - num2);
+/**
+ * check if number input is between 0 or 9. Logs errors message if not.
+ * @param {Number} guess number input
+ */
+const alert = guess => {
+  if (guess < 0) {
+    console.log("Number under 0, must be between 0-9");
+  } else if (guess > 9) {
+    console.log("Number above 9, must be between 0-9");
+  }
+}
