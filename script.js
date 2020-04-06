@@ -17,4 +17,14 @@ const generateTarget = () => Math.floor(Math.random()*10);
  * @returns {Boolean} Results of compare.
  */
 const compareGuesses = (humanGuess,computerGuess,secretTarget) => (humanGuess - secretTarget)<=(computerGuess - secretTarget);
-
+/**
+ * updates winner's score.
+ * @param {String} winner a string of last round winner. 
+ */
+const updateScore = winner => {
+  if ( winner === 'human'){
+    humanScore++;
+  } else if (winner === 'computer') {
+    computerScore++;
+  }
+} 
