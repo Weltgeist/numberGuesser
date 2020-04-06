@@ -27,4 +27,8 @@ const updateScore = winner => {
   } else if (winner === 'computer') {
     computerScore++;
   }
-} 
+};
+/**
+ * update the current round number.
+ */
+const advanceRound = () => {currentRoundNumber++;};
