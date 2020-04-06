@@ -32,3 +32,10 @@ const updateScore = winner => {
  * update the current round number.
  */
 const advanceRound = () => {currentRoundNumber++;};
+/**
+ * finds absolute distance between 2 numbers
+ * @param {*} num1 first number
+ * @param {*} num2 second number
+ * @returns {Number} absolute distance
+ */
+const getAbsoluteDistance = (num1,num2) => Math.abs(num1 - num2);
